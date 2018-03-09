@@ -19,11 +19,14 @@
                 @Html.ActionLink("Zoo project", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Información", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
-                </ul>
+              <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+                <li>@Html.ActionLink("Descripción del Problema", "About", "Home")</li>
+                <li>@Html.ActionLink("Diagramas UML", "Uml", "Home")</li>
+                <li>@Html.ActionLink("Metodología de desarrollo", "Metodology", "Home")</li>
+                <li>@Html.ActionLink("Arquitectura", "Arquitect", "Home")</li>
+                <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+              </ul>
             </div>
         </div>
     </div>

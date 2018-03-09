@@ -12,10 +12,29 @@ namespace zooproject.Controllers
     {
       return View();
     }
+    public ActionResult Uml()
+    {
+      //ViewBag.Message = "Diagramas de Usos UML";
+
+      return View();
+    }
+
+    public ActionResult Arquitect()
+    {
+      ViewBag.Message = "Arquitectura Datacentric (Centrada en datos)";
+
+      return View();
+    }
+    public ActionResult Metodology()
+    {
+      ViewBag.Message = "Scrum + Kanban";
+
+      return View();
+    }
 
     public ActionResult About()
     {
-      ViewBag.Message = "Descripción del proyecto";
+      ViewBag.Message = "Descripción del problema";
 
       return View();
     }
