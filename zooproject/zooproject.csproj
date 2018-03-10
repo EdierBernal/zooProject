@@ -209,6 +209,7 @@
     <Content Include="Views\Home\Uml.cshtml" />
     <Content Include="Views\Home\Arquitect.cshtml" />
     <Content Include="Views\Home\Metodology.cshtml" />
+    <Content Include="Views\Home\Interfaces.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

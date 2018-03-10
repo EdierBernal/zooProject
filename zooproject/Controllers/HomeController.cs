@@ -14,8 +14,6 @@ namespace zooproject.Controllers
     }
     public ActionResult Uml()
     {
-      //ViewBag.Message = "Diagramas de Usos UML";
-
       return View();
     }
 
@@ -43,6 +41,10 @@ namespace zooproject.Controllers
     {
       ViewBag.Message = "Datos del Estudiante";
 
+      return View();
+    }
+    public ActionResult Interfaces()
+    {
       return View();
     }
   }
