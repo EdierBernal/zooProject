@@ -47,5 +47,10 @@ namespace zooproject.Controllers
     {
       return View();
     }
+
+    public ActionResult IngConocimiento()
+    {
+      return View();
+    }
   }
 }
