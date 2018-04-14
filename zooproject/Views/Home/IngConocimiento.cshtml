@@ -1,23 +1,23 @@
 ﻿@{
-  ViewBag.Title = "Ingeniería del Conocimiento";
+    ViewBag.Title = "Ingeniería del Conocimiento";
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
 <h2>1. Arquitectura</h2>
 <p class="lead" style="text-align:justify">
-  Dentro de los desarrollos conocidos sobre sistemas expertos existen varias arquitecturas posibles, todas ellas con componentes en común.
-  Para este proyecto es apropiado mencionar los siguientes componentes:
-  <br />
+    Dentro de los desarrollos conocidos sobre sistemas expertos existen varias arquitecturas posibles, todas ellas con componentes en común.
+    Para este proyecto es apropiado mencionar los siguientes componentes:
+    <br />
 </p>
 
 <h3>1.1. Base de conocimientos (BC)</h3><br />
 <p class="lead" style="text-align:justify">
-  La construccion de ésta base de conocimiento es el punto crucial para el desarrollo del sistema de información porque suministrará al motor de
-  inferencia la información correspondiente a los zoológicos.
-  La base de conocimientos se creará con QnA Maker, éste es un servicio de consumo REST-API gratuito basado en inteligencia artificial en el que se crea una base de conocimiento como un
-  servicio de consumo y posteriormente es posible acceder a el para alimentar la base de conocimiento con datos que consideremos importantes, también implementando incluso chatbots interactivos inteligentes
-  para preguntar cosas relacionadas a la base de conocimiento.
+    La construccion de ésta base de conocimiento es el punto crucial para el desarrollo del sistema de información porque suministrará al motor de
+    inferencia la información correspondiente a los zoológicos.
+    La base de conocimientos se creará con QnA Maker, éste es un servicio de consumo REST-API gratuito basado en inteligencia artificial en el que se crea una base de conocimiento como un
+    servicio de consumo y posteriormente es posible acceder a el para alimentar la base de conocimiento con datos que consideremos importantes, también implementando incluso chatbots interactivos inteligentes
+    para preguntar cosas relacionadas a la base de conocimiento.
 </p>
 
 <br />
@@ -27,15 +27,16 @@
 
 <h3>1.2. Base de datos (DB)</h3><br />
 <p class="lead" style="text-align:justify">
-  Para el funcionamiento del sistema de información y alimentación de la base de conocimiento es necesario tener una base de datos escalable como se observa en la presentación de
-  la arquitectura
+    Para el funcionamiento del sistema de información y alimentación de la base de conocimiento es necesario tener una base de datos escalable como se observa en la presentación de
+    la arquitectura
 </p>
 <br />
+<div style="align-content:center"><img src="~/images/scaleDB.PNG" /></div>
 
 <h3>1.3. Motor de Inferencia (MI)</h3><br />
 <p class="lead" style="text-align:justify">
-  Los procesos inteligentes orientados a alertas según el análisis de datos sobre las poblaciones animales, movimientos financieros de cada zoologico, entre otras utilizarían la
-  inteligencia artificial LUIS (Language Understanding service) haciendo uso de servicios cognitivos (Vision, Knowledge, Search, Speech, Language).
+    Los procesos inteligentes orientados para alertas según el análisis de datos sobre las poblaciones animales, movimientos financieros de cada zoologico, entre otras utilizarían la
+    inteligencia artificial LUIS (Language Understanding service) haciendo uso de servicios cognitivos (Vision, Knowledge, Search, Speech, Language).
 </p>
 
 <h4>Cognitive Services (Servicios cognitivos)</h4>
@@ -43,17 +44,27 @@
 
 <h3>1.4. Estrategias del motor de Inferencia (MI)</h3><br />
 <p class="lead" style="text-align:justify">
-  Como estrategias que se pueden usar para el proyecto la orientada a datos es la más optima para implementar, pues toma como origen la inducción de datos y a partir de esto construye un conjunto de reglas
-  incrementando velocidad de búsqueda y análisis.
+    Como estrategias que se pueden usar para el proyecto la orientada a datos es la más optima para implementar, pues toma como origen la inducción de datos y a partir de esto construye un conjunto de reglas
+    incrementando velocidad de búsqueda y análisis.
 </p>
 
 <h3>1.5. Métodos y técnicas de adquisición de conocimiento</h3><br />
 <p class="lead" style="text-align:justify">
-  Para identificar, estructurar y recolectar conicimiento  debe de ser adaptable en este caso, pues al ser un sistema experto se necesitan evaluar diferentes entornos (zoologicos), y procesos para lograr unificar y
-  construir un sistema modular que permita adaptabilidad en cada uno de los diferentes entornos. <br />
-  Las técnicas de adquisición de conocimiento que se adaptan mejor son: <br />
-  Las entrevistas, Protocolos de discusión, Verbalización retrospectiva, Análisis de tareas y protocolos simulación de escenarios, descomposición de objetivos, simulación procedural,
-  escalada multidimencional, y tareas de procesamiento restringido.
+    Para identificar, estructurar y recolectar conicimiento  debe de ser adaptable en este caso, pues al ser un sistema experto se necesitan evaluar diferentes entornos (zoologicos), y procesos para lograr unificar y
+    construir un sistema modular que permita adaptabilidad en cada uno de los diferentes entornos. <br />
+    Las técnicas de adquisición de conocimiento que se adaptan mejor son: <br /><br />
+    <strong> Las entrevistas <br /></strong>
+    (Recolectar información correspondiente a comportamientos de especies, datos de reproduccion, datos financieros, datos de proceso de cada zoológico, etc.),<br />
+    <strong>Protocolos de discusión <br /></strong>
+    (Se deben seguir reuniones, y agendas de acuerdo a los requerimientos que se necesiten por cada zoológico) <br />
+    <strong>Verbalización retrospectiva <br /></strong>
+    (Es importante que los términos utilizados en cada zoológico durante la recolección de datos y el proceso de desarrollo sea el mismo) <br />
+    <strong>Análisis de tareas y protocolos simulación de escenarios </strong><br />
+    (Es estratégico recrear diversos ambientes para las pruebas del proyecto como cantidad de usuarios, creacion de diversas especies en climas diferentes, configuracion financiera de acuerdo a normatividades en cada lugar, etc)<br />
+    <strong>Descomposición de objetivos</strong><br />
+    (Entre mas pequeños y descompuestos sean los objetivos se puede lograr un enfoque mucho mas modular al proyecto y por consiguiente se da una mejor solución)<br />
+    <strong>Simulación procedural </strong><br />
+    (Las simulaciones deben ser por procesos y por fases)<br />
 </p>
 
 <h4>Algoritmo de restricciones combinadas</h4>
@@ -61,8 +72,8 @@
 
 <h3>1.6. Conocimientos tácticos</h3><br />
 <p class="lead" style="text-align:justify">
-  De esta manera es más sencillo conocer las relaciones que vinculan directa o indirectamente los objetos conceptuales del universo del dominio de conocimiento, en este caso los zoologicos con sus procesos.
-  El uso de tablas PER para el proyecto es de ayuda.
+    De esta manera es más sencillo conocer las relaciones que vinculan directa o indirectamente los objetos conceptuales del universo del dominio de conocimiento, en este caso los zoologicos con sus procesos.
+    El uso de tablas PER para el proyecto es de ayuda.
 </p>
 
 <h4>Tabla PER - Estructura</h4>
@@ -70,5 +81,5 @@
 
 <h3>1.7. Conocimiento estratégico</h3><br />
 <p class="lead" style="text-align:justify">
-  Un diagrama jerárquico de tareas es inprescindible para la construcción del sistema experto, pues todos los zoológicos contienen diferentes niveles en cuanto a su estructura, especies, manejo de recursos, personal etc.
+    Un diagrama jerárquico de tareas es inprescindible para la construcción del sistema experto, pues todos los zoológicos contienen diferentes niveles en cuanto a su estructura, especies, manejo de recursos, personal etc.
 </p>
