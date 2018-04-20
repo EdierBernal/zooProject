@@ -178,6 +178,7 @@
     <Content Include="images\scrum.gif" />
     <Content Include="images\TablaPerl.PNG" />
     <Content Include="images\TareaRestringidas.PNG" />
+    <Content Include="images\Triangulo.PNG" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -216,6 +217,7 @@
     <Content Include="Views\Home\Metodology.cshtml" />
     <Content Include="Views\Home\Interfaces.cshtml" />
     <Content Include="Views\Home\IngConocimiento.cshtml" />
+    <Content Include="Views\Home\Triangulacion.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

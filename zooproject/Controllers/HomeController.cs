@@ -52,5 +52,10 @@ namespace zooproject.Controllers
     {
       return View();
     }
+
+    public ActionResult Triangulacion()
+    {
+      return View();
+    }
   }
 }
