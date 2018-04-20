@@ -1,43 +1,52 @@
 ﻿@{
-  Layout = "~/Views/Shared/_Layout.cshtml";
+  ViewBag.Title = "Triangulación";
 }
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
 
-<script src="~/Scripts/jsGeneral.js"></script>
+<script type="text/javascript">
+  function openNewTabBrowser_Metodologia() {
+    //alert("Success");
+    window.open('https://itceduco-my.sharepoint.com/:w:/g/personal/ejbernalr_itc_edu_co/EYamwCKD2iZNtzcjVyYERHYB0dxctBNsiYDyFfkMplAryQ?e=ifIOMZ')
+  }
+</script>
 
-<div>
-  <h1>Triangulación</h1>
+<div class="modal-header">
+  <img height="200" width="480" src="~/images/Triangulo.PNG" />
+  <p>A continuación se describe cada punto con más detalle:</p>
 </div>
 
-<div>
-  <img src="~/images/Triangulo.PNG" />
-</div>
-<br />
-<hr />
+
+
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <h2>1). Autores</h2>
     <p class="active" style="text-align:justify">
-      Mata de la Vega Fátima Lorena. <br />
-      Mendoza Vázquez Helia Sujei.
+      <ul>
+        <li>Mata de la Vega Fátima Lorena.</li>
+        <li>Mendoza Vázquez Helia Sujei.</li>
+        <li>Fernando Córdova-Canela</li>
+        <li>Marco F. De Paolini</li>
+        <li>Adriana I. Olivares-González</li>
+      </ul>
     </p>
   </div>
+
 
   <div class="col-md-4">
     <h2>2). Fuentes</h2>
     <p class="active" style="text-align:justify">
       <ul>
         <li><a href="http://www.zooeasy.com/zooeasy/" target="_blank"> Zooeasy.com</a></li>
-        <li>
-          <a href="http://tesis.ipn.mx/bitstream/handle/123456789/13669/Proyecto%20Zoologico%20Protegido.pdf?sequence=1" target="_blank">
-            Tesis,Sistema para administración de la información de los animales de un zoológico.
-          </a>
-        </li>
+        <li><a href="http://rosmiman.es/" target="_blank">Tesis,Sistema para administración de la información de los animales de un zoológico.</a></li>
+        <li><a href="http://www.zooeasy.com/zooeasy/" target="_blank"> rosmiman.es</a></li>
+        <li><a href="https://dialnet.unirioja.es/descarga/articulo/5001908.pdf" target="_blank">Aplicación del sistema Zoológico de Guadalajara</a></li>
       </ul>
     </p>
   </div>
 
   <div class="col-md-4">
     <h2>3). Conceptos frente a metodología</h2>
-    <button id="btnLinkMetodology" class="btn-success btn-block" onclick="openNewTabBrowser_Metodologia()">Ver documento</button>
+    <button id="btnLinkMet" class="btn-success btn-block" onclick="openNewTabBrowser_Metodologia()">Ver documento</button>
   </div>
 </div>
