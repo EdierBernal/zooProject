@@ -179,6 +179,7 @@
     <Content Include="images\TablaPerl.PNG" />
     <Content Include="images\TareaRestringidas.PNG" />
     <Content Include="images\Triangulo.PNG" />
+    <Content Include="images\vertical Scaling.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
