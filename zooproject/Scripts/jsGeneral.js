@@ -13,5 +13,5 @@ function openNewTabBrowser_Metodologia() {
 
 function openNewTabBrowser_Interfaces() {
   //alert("Success");
-  window.open('https://itceduco-my.sharepoint.com/:w:/r/personal/ejbernalr_itc_edu_co/_layouts/15/Doc.aspx?sourcedoc=%7B8EE65BD7-9D60-4C63-8B6A-9C7F74BF7703%7D&file=Dise%C3%B1o%20de%20interfaces.docx&action=default&mobileredirect=true')
+  window.open('https://itceduco-my.sharepoint.com/:w:/g/personal/ejbernalr_itc_edu_co/Eddb5o5gnWNMi2qcf3S_dwMBQXuN_rkWn0ctX8ziwkcJIA?e=1zGp61')
 }

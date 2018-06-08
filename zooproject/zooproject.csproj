@@ -191,7 +191,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Properties\PublishProfiles\ZooProject - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\zooProject - FTP1.pubxml" />
     <None Include="Properties\PublishProfiles\ZooProject - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\zooProject - Web Deploy1.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
