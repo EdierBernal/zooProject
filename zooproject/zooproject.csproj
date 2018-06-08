@@ -164,8 +164,13 @@
     <Content Include="images\Componentes.png" />
     <Content Include="images\CU_Zoológico_General.png" />
     <Content Include="images\Diagrama de CU - Por Usuario.png" />
+    <Content Include="images\index.jpg" />
+    <Content Include="images\InterfazGeneral.PNG" />
+    <Content Include="images\InterfazGeneral2.PNG" />
+    <Content Include="images\InterfazWeb.PNG" />
     <Content Include="images\Internet Things.PNG" />
     <Content Include="images\kanban.png" />
+    <Content Include="images\Login.PNG" />
     <Content Include="images\Logo zooProject.png" />
     <Content Include="images\Logo zooProject02.png" />
     <Content Include="images\Logo zooProject03.png" />

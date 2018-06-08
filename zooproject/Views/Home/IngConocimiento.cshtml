@@ -1,55 +1,87 @@
 ﻿@{
-    ViewBag.Title = "Ingeniería del Conocimiento";
+  ViewBag.Title = "Ingeniería del Conocimiento";
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
+<style>
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
+    .active, .accordion:hover {
+      background-color: #ccc;
+    }
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+</style>
 <h2>1. Arquitectura</h2>
 <p class="lead" style="text-align:justify">
-    Dentro de los desarrollos conocidos sobre sistemas expertos existen varias arquitecturas posibles, todas ellas con componentes en común.
-    Para este proyecto es apropiado mencionar los siguientes componentes:
-    <br />
+  Dentro de los desarrollos conocidos sobre sistemas expertos existen varias arquitecturas posibles, todas ellas con componentes en común.
+  Para este proyecto es apropiado mencionar los siguientes componentes:
+  <br />
 </p>
 
-<h3>1.1. Base de conocimientos (BC)</h3><br />
-<p class="lead" style="text-align:justify">
+
+<button class="accordion">1.1. Base de conocimientos (BC)</button>
+<div class="panel">
+  <p class="lead" style="text-align:justify">
     La construccion de ésta base de conocimiento es el punto crucial para el desarrollo del sistema de información porque suministrará al motor de
     inferencia la información correspondiente a los zoológicos.
     La base de conocimientos se creará con QnA Maker, éste es un servicio de consumo REST-API gratuito basado en inteligencia artificial en el que se crea una base de conocimiento como un
     servicio de consumo y posteriormente es posible acceder a el para alimentar la base de conocimiento con datos que consideremos importantes, también implementando incluso chatbots interactivos inteligentes
     para preguntar cosas relacionadas a la base de conocimiento.
-</p>
+  </p>
+  <h4>Aquí se explica la arquitectura enfocada al consumo de la base de conocimiento según el manejo de QnA Maker.</h4>
+  <img src="~/images/botFrameworkArch.png" />
+</div>
 
-<br />
-<h4>Aquí se explica la arquitectura enfocada al consumo de la base de conocimiento según el manejo de QnA Maker.</h4>
-<img src="~/images/botFrameworkArch.png" />
-
-
-<h3>1.2. Base de datos (DB)</h3><br />
-<p class="lead" style="text-align:justify">
+<button class="accordion">1.2. Base de datos (DB)</button>
+<div class="panel">
+  <p class="lead" style="text-align:justify">
     Para el funcionamiento del sistema de información y alimentación de la base de conocimiento es necesario tener una base de datos escalable como se observa en la presentación de
     la arquitectura se muestra un escalamiento vertical.
-</p>
-<br />
-<img src="~/images/vertical Scaling.png" />
+  </p>
+  <br />
+  <img src="~/images/vertical Scaling.png" />
+</div>
 
-<h3>1.3. Motor de Inferencia (MI)</h3><br />
-<p class="lead" style="text-align:justify">
+<button class="accordion">1.3. Motor de Inferencia (MI)</button>
+<div class="panel">
+  <p class="lead" style="text-align:justify">
     Los procesos inteligentes orientados para alertas según el análisis de datos sobre las poblaciones animales, movimientos financieros de cada zoologico, entre otras utilizarían la
     inteligencia artificial LUIS (Language Understanding service) haciendo uso de servicios cognitivos (Vision, Knowledge, Search, Speech, Language).
-</p>
+  </p>
+  <h4>Cognitive Services (Servicios cognitivos)</h4>
+  <img src="~/images/luis.PNG" />
+</div>
 
-<h4>Cognitive Services (Servicios cognitivos)</h4>
-<img src="~/images/luis.PNG" />
-
-<h3>1.4. Estrategias del motor de Inferencia (MI)</h3><br />
-<p class="lead" style="text-align:justify">
+<button class="accordion">1.4. Estrategias del motor de Inferencia (MI)</button>
+<div class="panel">
+  <p class="lead" style="text-align:justify">
     Como estrategias que se pueden usar para el proyecto la orientada a datos es la más optima para implementar, pues toma como origen la inducción de datos y a partir de esto construye un conjunto de reglas
     incrementando velocidad de búsqueda y análisis.
-</p>
+  </p>
+</div>
 
-<h3>1.5. Métodos y técnicas de adquisición de conocimiento</h3><br />
-<p class="lead" style="text-align:justify">
+<button class="accordion">1.5. Métodos y técnicas de adquisición de conocimiento</button>
+<div class="panel">
+  <p class="lead" style="text-align:justify">
     Para identificar, estructurar y recolectar conicimiento  debe de ser adaptable en este caso, pues al ser un sistema experto se necesitan evaluar diferentes entornos (zoologicos), y procesos para lograr unificar y
     construir un sistema modular que permita adaptabilidad en cada uno de los diferentes entornos. <br />
     Las técnicas de adquisición de conocimiento que se adaptan mejor son: <br /><br />
@@ -65,21 +97,42 @@
     (Entre mas pequeños y descompuestos sean los objetivos se puede lograr un enfoque mucho mas modular al proyecto y por consiguiente se da una mejor solución). Historias de Usuario y descomposicion en tareas<br />
     <strong>Simulación procedural </strong><br />
     (Las simulaciones deben ser por procesos y por fases). Ejecutar en dos clientes prueba<br />
-</p>
+  </p>
 
-<h4>Algoritmo de restricciones combinadas</h4>
-<img src="~/images/TareaRestringidas.PNG" />
+  <h4>Algoritmo de restricciones combinadas</h4>
+  <img src="~/images/TareaRestringidas.PNG" />
+</div>
 
-<h3>1.6. Conocimientos tácticos</h3><br />
-<p class="lead" style="text-align:justify">
+<button class="accordion">1.6. Conocimientos tácticos</button>
+<div class="panel">
+  <p class="lead" style="text-align:justify">
     De esta manera es más sencillo conocer las relaciones que vinculan directa o indirectamente los objetos conceptuales del universo del dominio de conocimiento, en este caso los zoologicos con sus procesos.
     El uso de tablas PER para el proyecto es de ayuda.
-</p>
+  </p>
+  <h4>Tabla PER - Estructura</h4>
+  <img src="~/images/TablaPerl.PNG" />
+</div>
 
-@*<h4>Tabla PER - Estructura</h4>
-<img src="~/images/TablaPerl.PNG" />*@
-
-<h3>1.7. Conocimiento estratégico</h3><br />
-<p class="lead" style="text-align:justify">
+<button class="accordion">1.7. Conocimiento estratégico</button>
+<div class="panel">
+  <p class="lead" style="text-align:justify">
     Un diagrama jerárquico de tareas es inprescindible para la construcción del sistema experto, pues todos los zoológicos contienen diferentes niveles en cuanto a su estructura, especies, manejo de recursos, personal etc.
-</p>
+  </p>
+</div>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+</script>

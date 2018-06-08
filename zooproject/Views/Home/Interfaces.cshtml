@@ -1,7 +1,50 @@
 ﻿@{
-    ViewBag.Title = "Interfaces de Usuario";
+  ViewBag.Title = "Interfaces de Usuario";
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
-<p class="text-info">Diseño de interfaces en construcción</p>
+<script src="~/Scripts/jsGeneral.js"></script>
+<div class="col-md-">
+  <button id="btnLinkMet" class="btn-success btn-block" onclick="openNewTabBrowser_Interfaces()">Ver documento de Interfaces de Usuario</button>
+</div>
+<h3>1. Inicio de sesion</h3>
+<p class="arrow" style="text-align:justify">
+  El diseño de las interfaces de usuario debe ser multiplataforma.
+</p>
+
+<div class="row">
+  <div class="col-md-6">
+    <img src="~/images/Login.PNG" />
+  </div>
+
+  <div class="col-md-6">
+    <br />
+    <img src="~/images/InterfazWeb.PNG" />
+  </div>
+</div>
+<hr />
+
+<h3>2. Interfaz general</h3>
+<p class="arrow" style="text-align:justify">
+  <ul>
+    El diseño de las interfaces de usuario deben restringir los diferentes accesos a módulos según los roles de usuarios.
+    Como anotaciones:
+    <li>Debe contener dos paneles repartidos en la totalidad vertical con proporciones 30 y 70 %. Al lado izquierdo se debe visualizar información correspondiente al usuario que ingresa y en la parte inferior información del historial de navegación y acciones del usuario. Éste panel es visible y se puede ocultar a consideración del usuario.</li>
+    <li>Para dispositivos móviles se debe tener soporte y actualizaciones en navegadores web Google Chrome y mozilla Firefox mobile versión.</li>
+    <li>Para ambas plataformas el diseño debe ser adaptable y funcionar de manera responsive (Adaptable según los tamaños de pantalla estándar en el mercado). </li>
+  </ul>
+</p>
+
+<div class="row">
+  <div class="col-md-10">
+    <p>Rol Administrativo</p>
+    <img height="450" width="750" src="~/images/InterfazGeneral.PNG" />
+  </div>
+  <br />
+  <div class="col-md-10">
+    <p>Rol Administrador</p>
+    <img height="450" width="750" src="~/images/InterfazGeneral2.PNG" />
+  </div>
+</div>
+<hr />

@@ -4,45 +4,95 @@
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
-<h2>1. Diagrama de Requerimientos</h2>
-<p class="lead" style="text-align:justify">
-  En este diagrama se representan los requerimientos funcionales analizados sobre la gestión de información de zoológicos.
-</p>
+<style>
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
 
-<h3>Requerimientos funcionales</h3>
-<img src="~/images/Requeriments Diagram.png" />
+    .active, .accordion:hover {
+      background-color: #ccc;
+    }
 
-<hr />
-<h2>2. Diagrama de casos de uso</h2>
-<p class="lead" style="text-align:justify">
-  Se presentan dos diagramas que corresponden a la interacción del sistema de información. Los usuarios básicos correspondarán a 4 roles específicos
-  que son: Administrador, Personal administrativo o de gestión, Personal operativo y por último personal consultor.
-</p>
-<h3>2.1 Caso de uso General</h3>
-<img src="~/images/CU_Zoológico_General.png" />
-<br />
-<hr />
-<h3>2.2 Caso de uso por roles de usuario</h3>
-<img src="~/images/Diagrama de CU - Por Usuario.png" />
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+</style>
 
+<h4>A continuación se exponen los diagramas de casos de uso más representativos.</h4>
 
-<hr />
-<h2>3. Diagrama de Clases</h2>
-<p class="lead" style="text-align:justify">
-  El diagrama de clases corresponde a la estructura básica del sistema de información.
-</p>
-<img src="~/images/Clases.png" />
+<button class="accordion">1. Diagrama de Requerimientos</button>
+<div class="panel">
+  <p class="lead" style="text-align:justify">
+    En este diagrama se representan los requerimientos funcionales analizados sobre la gestión de información de zoológicos.
+  </p>
+  <h3>Requerimientos funcionales</h3>
+  <img src="~/images/Requeriments Diagram.png" />
+</div>
 
-<hr />
-<h2>4. Diagrama de Componentes</h2>
-<p class="lead" style="text-align:justify">
-  En este diagrama se pueden observar todos los componentes analizados para el sistema de información y su correspondientes dependencias entre ellos
-</p>
-<img src="~/images/Componentes.png" />
+<button class="accordion">2. Diagrama de casos de uso</button>
+<div class="panel">
+  <p class="lead" style="text-align:justify">
+    Se presentan dos diagramas que corresponden a la interacción del sistema de información. Los usuarios básicos correspondarán a 4 roles específicos
+    que son: Administrador, Personal administrativo o de gestión, Personal operativo y por último personal consultor.
+  </p>
+  <h3>2.1 Caso de uso General</h3>
+  <img src="~/images/CU_Zoológico_General.png" />
+  <br />
+  <hr />
+  <h3>2.2 Caso de uso por roles de usuario</h3>
+  <img src="~/images/Diagrama de CU - Por Usuario.png" />
+</div>
 
-<hr />
-<h2>5. Diagrama de Paquetes</h2>
-<p class="lead" style="text-align:justify">
-  En este diagrama se visualizan los paquetes correspondientes al desarrollo del sistema de información
-</p>
-<img src="~/images/Paquetes.png" />
+<button class="accordion">3. Diagrama de Clases</button>
+<div class="panel">
+  <p class="lead" style="text-align:justify">
+    El diagrama de clases corresponde a la estructura básica del sistema de información.
+  </p>
+  <img src="~/images/Clases.png" />
+</div>
+
+<button class="accordion">4. Diagrama de Componentes</button>
+<div class="panel">
+  <p class="lead" style="text-align:justify">
+    En este diagrama se pueden observar todos los componentes analizados para el sistema de información y su correspondientes dependencias entre ellos
+  </p>
+  <img src="~/images/Componentes.png" />
+</div>
+
+<button class="accordion">5. Diagrama de Paquetes</button>
+<div class="panel">
+  <p class="lead" style="text-align:justify">
+    En este diagrama se visualizan los paquetes correspondientes al desarrollo del sistema de información
+  </p>
+  <img src="~/images/Paquetes.png" />
+</div>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+</script>
